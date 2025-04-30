@@ -10,6 +10,8 @@ namespace XC::Hardware
             int pinX;
             int pinY;
         public:
-            AnalogJoystick(int pinX, int pinY): pinX(pinX), pinY(pinY) {};
+            AnalogJoystick(int pinX, int pinY);
+            long getX() override;
+            long getY() override;
     };
 }
