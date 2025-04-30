@@ -13,6 +13,7 @@ namespace XC
                 virtual void begin() = 0;
 
                 virtual int width() = 0;
+                virtual int height() = 0;
 
                 virtual void textSize(int size) = 0;
                 virtual void background(int r, int g, int b) = 0; 

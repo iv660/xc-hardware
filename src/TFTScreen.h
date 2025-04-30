@@ -54,6 +54,11 @@ namespace XC::Hardware
                 return TFT::width();
             }
 
+            int height() override
+            {
+                return TFT::height();
+            }
+
             void drawPixel(int x, int y, uint16_t color) override
             {
                 TFT::drawPixel(x, y, color);
